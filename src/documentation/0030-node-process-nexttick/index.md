@@ -7,7 +7,7 @@ section: Getting Started
 
 As you try to understand the Node.js event loop, one important part of it is `process.nextTick()`.
 
-Every time the event loop takes a full trip, we call it a tick.
+Every time the event loop takes a full trip, we call it a tick. I am carefully reading through this documentation and am shocked to see this - This is not clear. I am left confused as to what a "Full trip" is. What is a "Full trip"? Is a full trip each iteration executing the call stack. Or is it something entirely not explained, being that it is when the call stack is empty again?
 
 When we pass a function to `process.nextTick()`, we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts:
 
